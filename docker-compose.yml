@@ -6,6 +6,8 @@ services:
     depends_on:
       - onlyoffice-postgresql
       - onlyoffice-rabbitmq
+    networks:
+      - dokploy-network
     environment:
       - DB_TYPE=postgres
       - DB_HOST=onlyoffice-postgresql
