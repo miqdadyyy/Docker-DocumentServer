@@ -33,6 +33,9 @@ services:
        - /var/lib/onlyoffice/documentserver/App_Data/cache/files
        - /var/www/onlyoffice/documentserver-example/public/files
        - /usr/share/fonts
+       - /var/www/onlyoffice/documentserver/letsencrypt
+       - /etc/onlyoffice/documentserver/nginx
+       - /etc/letsencrypt/live
        
   onlyoffice-rabbitmq:
     container_name: onlyoffice-rabbitmq
